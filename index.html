@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="display">
+      <div class="library">
+        <div class="header">My Books</div>
+        <hr>
+      </div>
+    </div>
+    
+    <button onclick="setFormDisplay('block')">New Book</button>
+    <div class="book-form" style="display:none">
+      Title:<br>
+      <input type="text" name="title"><br>
+      Author:<br>
+      <input type="text" name="author"><br>
+      Year:<br>
+      <input type="text" name="year"><br>
+      <button onclick="addBook()">Submit</button>
+      <button onclick="setFormDisplay('none')">Cancel</button>
+    </div>
+    <div class="book-list" id="item-template">
+      <div class="book">
+        <div class="book-img">
+          <img src="https://dynamic.indigoimages.ca/books/1408855658.jpg?altimages=true&scaleup=true&maxheight=515&width=380&quality=85&sale=3&lang=en">
+        </div>
+        <div class="book-info">
+          <div class="book-title">Harry Potter and the Philosopher's Stone</div>
+          <div class="book-year">1997</div>
+          <div class="book-author">J.K. Rowling</div>
+          <div class="book-controls">
+            <img src="images/reading-icon.png">
+            <img src="images/delete-icon.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

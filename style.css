@@ -1,0 +1,93 @@
+#display {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  height: 100%;
+}
+
+.header {
+  font-size: 40px;
+  margin: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+th, td {
+  border: 1px solid gray;
+  font-size: 20px;
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#item-template {
+  display: none;
+}
+
+.book {
+  display: flex;
+  height: 180px;
+  width: 280px;
+}
+
+.book-img > img {
+  height: 180px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px gray;
+}
+
+.book-controls > img {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+.book-info {
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.book-title {
+  display: inline;
+  font-weight: bold;
+  font-size: 16px;
+}
+.book-year {
+  display: inline;
+  color: #686868;
+  font-size: 14px;
+}
+
+.book-author {
+  color: 	#505050;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.library {
+  height: 800px;
+  padding: 15px;
+
+  width: 600px;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 15px 20px 25px lightblue;
+}
