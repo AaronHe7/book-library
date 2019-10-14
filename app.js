@@ -17,7 +17,7 @@ function render() {
 
   library.forEach(book => {
     let template = document.getElementById('item-template');
-    let book = template.cloneNode(true);
+    let bookDiv = template.cloneNode(true);
   })
 }
 
