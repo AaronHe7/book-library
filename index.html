@@ -10,32 +10,42 @@
       <div class="library">
         <div class="header">My Books</div>
         <hr>
+        <div class="book-list"></div>
       </div>
+      <!-- <div class="transparent-overlay">
+        <div class="book-form">
+            <div class="header">Add a book</div>
+            <hr>
+            Title:<br>
+            <input type="text" name="title" placeholder="Harry Potter and the Philosopher's Stone"><br>
+            Author:<br>
+            <input type="text" name="author" placeholder="J. K. Rowling"><br>
+            Year:<br>
+            <input type="text" name="year" placeholder="1997"><br>
+            Image URL:<br>
+            <input type="text" name="source" placeholder="https://www.imagesource.com/"><br>
+            <button onclick="addBook()">Submit</button>
+            <button onclick="setFormDisplay('none')">Cancel</button>
+        </div>
+      </div> -->
     </div>
     
     <button onclick="setFormDisplay('block')">New Book</button>
     <div class="book-form" style="display:none">
-      Title:<br>
-      <input type="text" name="title"><br>
-      Author:<br>
-      <input type="text" name="author"><br>
-      Year:<br>
-      <input type="text" name="year"><br>
-      <button onclick="addBook()">Submit</button>
-      <button onclick="setFormDisplay('none')">Cancel</button>
+      
     </div>
-    <div class="book-list" id="item-template">
+    <div class="book" id="item-template">
       <div class="book">
         <div class="book-img">
-          <img src="https://dynamic.indigoimages.ca/books/1408855658.jpg?altimages=true&scaleup=true&maxheight=515&width=380&quality=85&sale=3&lang=en">
+          <img src="images/book-default.png">
         </div>
         <div class="book-info">
-          <div class="book-title">Harry Potter and the Philosopher's Stone</div>
-          <div class="book-year">1997</div>
-          <div class="book-author">J.K. Rowling</div>
+          <div class="book-title"></div>
+          <div class="book-year"></div>
+          <div class="book-author"></div>
           <div class="book-controls">
-            <img src="images/reading-icon.png">
-            <img src="images/delete-icon.png">
+            <img src="images/reading-icon.png" alt="reading-icon" class="reading-icon">
+            <img src="images/delete-icon.png" alt="delete-icon" class="delete-icon">
           </div>
         </div>
       </div>

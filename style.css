@@ -90,3 +90,39 @@ tr:nth-child(even) {
   border-radius: 10px;
   box-shadow: 15px 20px 25px lightblue;
 }
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 90%;
+}
+.book-list > div {
+  margin: 20px;
+}
+
+.book-controls > img {
+  cursor: pointer;
+}
+
+.transparent-overlay {
+  height: 85%;
+  min-height: 200px;
+  padding: 15px;
+
+  width: 700px;
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(128, 128, 128, 0.5);
+}
+
+.book-form {
+  background-color: white;
+  border-radius: 8px;
+  height: 70%;
+  width: 70%;
+  padding: 15px;
+}
