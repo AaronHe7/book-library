@@ -8,11 +8,11 @@
   <body>
     <div id="display">
       <div class="library">
-        <div class="header">My Books</div>
+        <div class="header">My Books<button class="green-btn" onclick="setFormDisplay('flex')">New Book</button></div>
         <hr>
         <div class="book-list"></div>
       </div>
-      <!-- <div class="transparent-overlay">
+      <div class="transparent-overlay" style="display: none">
         <div class="book-form">
             <div class="header">Add a book</div>
             <hr>
@@ -24,20 +24,15 @@
             <input type="text" name="year" placeholder="1997"><br>
             Image URL:<br>
             <input type="text" name="source" placeholder="https://www.imagesource.com/"><br>
-            <button onclick="addBook()">Submit</button>
-            <button onclick="setFormDisplay('none')">Cancel</button>
+            <button class="blue-btn" onclick="addBook()">Submit</button>
+            <button class="blue-btn" onclick="setFormDisplay('none')">Cancel</button>
         </div>
-      </div> -->
-    </div>
-    
-    <button onclick="setFormDisplay('block')">New Book</button>
-    <div class="book-form" style="display:none">
-      
+      </div>
     </div>
     <div class="book" id="item-template">
       <div class="book">
         <div class="book-img">
-          <img src="images/book-default.png">
+          <img src="images/book-default.png" onerror="this.src = 'images/book-default.png'">
         </div>
         <div class="book-info">
           <div class="book-title"></div>
