@@ -14,8 +14,9 @@
       </div>
       <div class="transparent-overlay" style="display: none">
         <div class="book-form">
-            <div class="header">Add a book</div>
+            <div class="header header-small">Add a book</div>
             <hr>
+            <br>
             Title:<br>
             <input type="text" name="title" placeholder="Harry Potter and the Philosopher's Stone"><br>
             Author:<br>
@@ -23,7 +24,7 @@
             Year:<br>
             <input type="text" name="year" placeholder="1997"><br>
             Image URL:<br>
-            <input type="text" name="source" placeholder="https://www.imagesource.com/"><br>
+            <input type="text" name="source" placeholder="https://www.imagesource.com/"><br><br>
             <button class="blue-btn" onclick="addBook()">Submit</button>
             <button class="blue-btn" onclick="setFormDisplay('none')">Cancel</button>
         </div>
@@ -39,8 +40,14 @@
           <div class="book-year"></div>
           <div class="book-author"></div>
           <div class="book-controls">
-            <img src="images/reading-icon.png" alt="reading-icon" class="reading-icon">
-            <img src="images/delete-icon.png" alt="delete-icon" class="delete-icon">
+            <div class="tooltip">
+              <img src="images/reading-icon.png" alt="reading-icon" class="reading-icon show-tooltip">
+              <span class="tooltiptext read-status"></span>
+            </div>
+            <div class="tooltip">
+              <img src="images/delete-icon.png" alt="delete-icon" class="delete-icon show-tooltip">
+              <span class="tooltiptext">Delete</span>
+            </div>
           </div>
         </div>
       </div>

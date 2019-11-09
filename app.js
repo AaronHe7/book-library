@@ -34,9 +34,12 @@ function render() {
 
     if (book.isRead) {
       bookDiv.querySelector('.reading-icon').src = 'images/reading-icon-clicked.png';
+      bookDiv.querySelector('.read-status').textContent = 'Read';
+    } else {
+      bookDiv.querySelector('.read-status').textContent = 'Unread';
     }
     bookDiv.querySelector('.delete-icon').onclick = function() {
-      library.splice(i, 1); 
+      library.splice(i, 1);
       render();
     }
     bookDiv.querySelector('.reading-icon').onclick = function() {
